@@ -1,0 +1,39 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+/* tailwind setup */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --fonts-dark: theme("colors.fonts.dark");
+    --fonts-primary: theme("colors.fonts.primary");
+    --fonts-secondary: theme("colors.fonts.secondary");
+    --fonts-tertiary: theme("colors.fonts.tertiary");
+    --bg-primary: theme("colors.backgrounds.primary");
+    --bg-secondary: theme("colors.backgrounds.secondary");
+    --bg-accent: theme("colors.backgrounds.accent");
+    --btn-dark: theme("colors.buttons.dark");
+    --btn-primary: theme("colors.buttons.primary");
+    --btn-secondary: theme("colors.buttons.secondary");
+    --btn-accent: theme("colors.buttons.accent");
+    --blur-green: theme("colors.layerBlur.green");
+    --blur-yellow: theme("colors.layerBlur.yellow");
+    --blur-pink: theme("colors.layerBlur.pink");
+    --font-default: theme("fontFamily.sans");
+    --font-title: theme("fontFamily.theme");
+  }
+}
+
+/* nav-hero */
+.nav_hero {
+  background-image: "src/img/bg_hero.png";
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  font-family: var(--font-default);
+  font-size: 16px;
+}
