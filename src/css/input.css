@@ -27,13 +27,18 @@
   }
 }
 
-/* nav-hero */
+/* nav*/
+.navbar {
+  border-color: var(--fonts-tertiary);
+}
+
 .nav_hero {
   background-image: "src/img/bg_hero.png";
   background-repeat: no-repeat;
 }
 
-.navbar {
+.header {
   font-family: var(--font-default);
   font-size: 16px;
+  color: var(--fonts-primary);
 }
