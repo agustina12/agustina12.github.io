@@ -25,6 +25,9 @@
     --font-default: theme("fontFamily.sans");
     --font-title: theme("fontFamily.theme");
   }
+  /* .bg-hero {
+    background-image: url("../assets/img/bg_hero.png");
+  } */
 }
 
 /* nav*/
@@ -32,13 +35,47 @@
   border-color: var(--fonts-tertiary);
 }
 
-.nav_hero {
-  background-image: url("/src/img/bg_hero.png");
+.nav-bg {
+  background-image: url("../assets/img/texture.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header {
   font-family: var(--font-default);
   font-size: 16px;
   color: var(--fonts-primary);
+}
+
+.hero-text h1 {
+  font-family: var(--font-title);
+  font-size: 80px;
+  color: var(--fonts-secondary);
+}
+
+.hero-text .sub-title {
+  font-family: var(--font-default);
+  color: var(--fonts-primary);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: 0.64px;
+}
+
+.hero-text .paragraph {
+  font-family: var(--font-default);
+  color: var(--fonts-tertiary);
+}
+
+/* blur bg */
+.yellow-blur {
+  left: 50rem;
+}
+
+.pink-blur {
+  right: 23rem;
+}
+
+.hero-img img {
+  top: -40px;
 }
