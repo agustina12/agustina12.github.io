@@ -14,7 +14,9 @@ module.exports = {
         backgrounds: {
           primary: "#FAFAFA",
           secondary: "#8FA685",
+          tertiary: "FCE0DE",
           accent: "#FFCC63",
+          cardPrimary: "#FFECCD",
         },
         buttons: {
           dark: "#000000",
@@ -26,6 +28,9 @@ module.exports = {
           green: "#DDF6D2",
           yellow: "#FFEAC9",
           pink: "#FFD2CE",
+        },
+        card: {
+          primary: "#FFECCD",
         },
       },
       fontFamily: {
