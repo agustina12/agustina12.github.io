@@ -9,8 +9,7 @@
   </head>
   <body>
     <div class="nav-bg h-auto w-full">
-      <div class="mx-40">
-        <!-- navbar -->
+      <!-- <div class="mx-40">
         <nav class="navbar w-full rounded-full border flex flex-row justify-between items-center py-4 px-8 mt-6 bg-white">
           <img class="logo" src="/src/assets/img/logo.png" alt="logo" />
           <ul class="header flex justify-items-end gap-10">
@@ -34,15 +33,68 @@
             </li>
           </ul>
         </nav>
+      </div> -->
+      <!-- nav -->
+      <!-- NAVBAR (paste di tempat navbar kamu) -->
+      <div class="px-4 pt-3 sm:pt-6 md:px-12 lg:px-20 xl:px-40">
+        <nav class="navbar w-full rounded-full border flex items-center justify-between py-4 px-4 bg-white sm:mt-3">
+          <a href="#" class="flex items-center gap-3">
+            <img src="/src/assets/img/logo.png" alt="Agustina logo" class="h-5 sm:h-6 md:h-8 lg:h-8 object-contain" />
+          </a>
+          <ul class="hidden lg:flex items-center gap-8 text-sm font-normal text-fonts-primary">
+            <li><a href="#" class="group-hover:font-semibold group-hover:underline transition">Home</a></li>
+            <li><a href="#" class="group-hover:font-semibold group-hover:underline transition">About Me</a></li>
+            <li><a href="#" class="group-hover:font-semibold group-hover:underline transition">My Services</a></li>
+            <li><a href="#" class="group-hover:font-semibold group-hover:underline transition">Portfolio</a></li>
+            <li><a href="#" class="group-hover:font-semibold group-hover:underline transition">Testimonials</a></li>
+            <li><a href="#" class="group-hover:font-semibold group-hover:underline transition">Contact Me</a></li>
+          </ul>
+
+          <div class="hidden lg:flex items-center gap-4">
+            <a href="#" class="px-4 py-2 rounded-full border border-buttons-primary text-buttons-primary text-sm">Download</a>
+            <a href="#" class="bg-buttons-primary text-white px-4 py-2 rounded-full text-sm">Hire me</a>
+          </div>
+
+          <!-- hamburger -->
+          <div class="lg:hidden">
+            <button id="nav-toggle" aria-controls="mobile-menu" aria-expanded="false" class="p-2 rounded-md border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-buttons-primary" title="Open menu">
+              <svg id="hamburger-icon" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg id="close-icon" class="w-6 h-6 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6l12 12M6 18L18 6" />
+              </svg>
+            </button>
+          </div>
+        </nav>
       </div>
+
+      <!-- MOBILE MENU (centered panel) -->
+      <div id="mobile-menu" class="lg:hidden">
+        <div class="px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40">
+          <!-- panel centered with mx-auto and limited max-width -->
+          <div id="mobile-panel" class="mx-auto max-w-md w-full bg-white border rounded-xl mt-3 p-4 shadow-md transform origin-top-center scale-y-0" style="transform-origin: top center">
+            <ul class="flex flex-col gap-3 text-base text-fonts-primary">
+              <li><a href="#" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100">Home</a></li>
+              <li><a href="#" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100">About Me</a></li>
+              <li><a href="#" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100">My Services</a></li>
+              <li><a href="#" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100">Portfolio</a></li>
+              <li><a href="#" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100">Testimonials</a></li>
+              <li><a href="#" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100">Contact Me</a></li>
+            </ul>
+
+            <div class="mt-4 flex gap-3">
+              <a href="#" class="flex-1 text-center px-4 py-2 rounded-full border">Download</a>
+              <a href="#" class="flex-1 text-center px-4 py-2 rounded-full bg-buttons-primary text-white">Hire me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- hero -->
       <div class="hero relative overflow-hidden">
         <div class="pointer-events-none absolute -left-32 bottom-0 h-52 w-52 rounded-full bg-green-400 opacity-50 blur-3xl -z-10"></div>
-
-        <!-- Blob kuning di belakang teks (kiri atas) -->
         <div class="yellow-blur pointer-events-none absolute top-24 h-32 w-32 rounded-full bg-yellow-400 opacity-60 blur-3xl -z-10"></div>
-
-        <!-- Blob merah/pink di belakang foto (kanan bawah) -->
         <div class="pink-blur pointer-events-none absolute bottom-10 h-52 w-52 rounded-full bg-rose-400 opacity-70 blur-3xl -z-10"></div>
         <div class="flex flex-row justify-between items-center mx-40 my-16">
           <div class="hero-text w-1/2">
@@ -63,14 +115,6 @@
           </div>
           <div class="hero-img w-1/2">
             <div class="relative overflow-hidden">
-              <!-- <div class="card-img relative z-10">
-                <div class="w-96 h-96 relative">
-                  <div
-                    class="w-80 h-96 left-[180.15px] top-0 absolute bg-white rounded-[20px] shadow-[20px_25px_50px_20px_rgba(0,0,0,0.15)]"></div>
-                  <div
-                    class="w-72 h-64 left-[195.02px] top-[20.81px] absolute bg-zinc-300 rounded-[10px]"></div>
-                </div>
-              </div> -->
               <div class="card">
                 <div class="inner-box"></div>
               </div>
@@ -108,95 +152,114 @@
     </div>
     <!-- about me -->
     <div class="about_me">
-      <div class="bg-backgrounds-primary mx-40 my-16 rounded-2xl">
+      <div class="bg-backgrounds-primary mx-4 sm:mx-6 md:mx-12 lg:mx-20 xl:mx-40 my-8 md:my-16 rounded-2xl">
         <div class="flex flex-col items-center">
-          <h1 class="mt-8 mb-5 text-4xl font-medium text-fonts-primary tracking-wide">🙌 Nice to meet you!</h1>
-          <div class="bg-rose-100 w-3/5 p-6 rounded-2xl my-3">
-            <p class="font-normal text-xl text-fonts-primary tracking-wide leading-8">
+          <!-- heading responsive -->
+          <h1 class="mt-6 mb-4 text-2xl sm:text-3xl md:text-4xl font-medium text-fonts-primary tracking-wide text-center">🙌 Nice to meet you!</h1>
+
+          <!-- rose boxes: full width on small, 9/12 on md+ (aku jaga w-9/12 sesuai permintaan) -->
+          <div class="bg-rose-100 w-full md:w-9/12 lg:w-9/12 p-4 sm:p-5 md:p-6 rounded-2xl my-3">
+            <p class="font-normal text-base sm:text-lg md:text-xl text-fonts-primary tracking-wide leading-6 sm:leading-7 md:leading-8">
               I’m a Web Designer & Front-End Developer focused on building clean, modern, fast, and user-friendly websites. I enjoy turning design ideas into real digital products through thoughtful design and solid front-end development.
             </p>
           </div>
-          <div class="bg-rose-100 w-3/5 p-6 rounded-2xl my-3">
-            <p class="font-normal text-xl text-fonts-primary tracking-wide leading-8">
+
+          <div class="bg-rose-100 w-full md:w-9/12 lg:w-9/12 p-4 sm:p-5 md:p-6 rounded-2xl my-3">
+            <p class="font-normal text-base sm:text-lg md:text-xl text-fonts-primary tracking-wide leading-6 sm:leading-7 md:leading-8">
               I’ve collaborated with international clients on Upwork, transforming Figma designs into responsive HTML/Tailwind code and building lightweight interactive components using JavaScript and Alpine.js.
             </p>
           </div>
-          <div class="bg-rose-100 w-3/5 p-6 rounded-2xl my-3">
-            <p class="font-normal text-xl text-fonts-primary tracking-wide leading-8">
-              IAlongside freelance work, I also collaborate with development teams in a production environment — contributing to feature testing, UI validation, and release documentation. This experience helps me understand how design and
+
+          <div class="bg-rose-100 w-full md:w-9/12 lg:w-9/12 p-4 sm:p-5 md:p-6 rounded-2xl my-3">
+            <p class="font-normal text-base sm:text-lg md:text-xl text-fonts-primary tracking-wide leading-6 sm:leading-7 md:leading-8">
+              Alongside freelance work, I also collaborate with development teams in a production environment — contributing to feature testing, UI validation, and release documentation. This experience helps me understand how design and
               code work together in real systems.
             </p>
           </div>
         </div>
-        <div class="flex flex-col items-center">
-          <h1 class="mt-8 mb-5 text-4xl font-medium text-fonts-primary tracking-wide">Skills & tools</h1>
-          <div class="flex flex-row justify-around gap-6">
-            <div class="bg-backgrounds-cardPrimary rounded-3xl p-4 w-1/2">
-              <div class="bg-white bg-opacity-45 rounded-full p-3">
-                <h3 class="font-medium tracking-wide text-fonts-primary text-xl">🎨 Design Skills</h3>
-              </div>
-              <div class="text-fonts-primary text-base font-normal py-2 pl-6">
-                <div class="flex flex-row items-center gap-4 py-1">
-                  <span class="bg-fonts-primary w-1 h-1 rounded-full"></span>
-                  <h3>UI Design/UX Design</h3>
+
+        <!-- Skills & tools -->
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-8 md:pt-10 pb-12 md:pb-16">
+          <div class="flex flex-col items-center">
+            <h1 class="mt-6 mb-6 text-2xl sm:text-3xl md:text-4xl font-medium text-gray-800 tracking-wide text-center">Skills & tools</h1>
+
+            <!-- KEEP your flex structure; responsive tweaks only -->
+            <div class="flex flex-col md:flex-row md:justify-between gap-4 sm:gap-5 md:gap-6 w-full items-stretch">
+              <!-- Card 1 -->
+              <div class="flex-1 bg-backgrounds-cardPrimary rounded-3xl p-4 sm:p-5 md:p-6 flex flex-col h-full">
+                <div class="inline-block bg-white/70 rounded-full px-4 py-2 mb-4 w-auto md:w-full self-start">
+                  <h3 class="font-medium text-gray-800 text-base sm:text-lg md:text-lg">🎨 Design Skills</h3>
                 </div>
-                <div class="flex flex-row items-center gap-4 py-1">
-                  <span class="bg-fonts-primary w-1 h-1 rounded-full"></span>
-                  <h3>Landing Page Design</h3>
-                </div>
-                <div class="flex flex-row items-center gap-4 py-1">
-                  <span class="bg-fonts-primary w-1 h-1 rounded-full"></span>
-                  <h3>Visual Refinement</h3>
-                </div>
-                <div class="flex flex-row items-center gap-4 py-1">
-                  <span class="bg-fonts-primary w-1 h-1 rounded-full"></span>
-                  <h3>Illustration & Icons</h3>
-                </div>
-              </div>
-            </div>
-            <div class="bg-backgrounds-cardPrimary rounded-3xl p-4 w-1/2">
-              <div class="bg-white bg-opacity-45 rounded-full p-3">
-                <h3 class="font-medium tracking-wide text-fonts-primary text-xl">🎨 Design Skills</h3>
-              </div>
-              <div class="text-fonts-primary text-base font-normal py-2 pl-6">
-                <div class="flex flex-row items-center gap-4 py-1">
-                  <span class="bg-fonts-primary w-1 h-1 rounded-full"></span>
-                  <h3>UI Design/UX Design</h3>
-                </div>
-                <div class="flex flex-row items-center gap-4 py-1">
-                  <span class="bg-fonts-primary w-1 h-1 rounded-full"></span>
-                  <h3>Landing Page Design</h3>
-                </div>
-                <div class="flex flex-row items-center gap-4 py-1">
-                  <span class="bg-fonts-primary w-1 h-1 rounded-full"></span>
-                  <h3>Visual Refinement</h3>
-                </div>
-                <div class="flex flex-row items-center gap-4 py-1">
-                  <span class="bg-fonts-primary w-1 h-1 rounded-full"></span>
-                  <h3>Illustration & Icons</h3>
+
+                <div class="mt-2 text-gray-700 text-sm sm:text-base md:text-base space-y-2 flex-1">
+                  <div class="flex items-start gap-3 px-4 sm:px-5">
+                    <span class="mt-2 w-2 h-2 bg-gray-800 rounded-full"></span>
+                    <p>UI Design/UX Design</p>
+                  </div>
+                  <div class="flex items-start gap-3 px-4 sm:px-5">
+                    <span class="mt-2 w-2 h-2 bg-gray-800 rounded-full"></span>
+                    <p>Landing Page Design</p>
+                  </div>
+                  <div class="flex items-start gap-3 px-4 sm:px-5">
+                    <span class="mt-2 w-2 h-2 bg-gray-800 rounded-full"></span>
+                    <p>Visual Refinement</p>
+                  </div>
+                  <div class="flex items-start gap-3 px-4 sm:px-5">
+                    <span class="mt-2 w-2 h-2 bg-gray-800 rounded-full"></span>
+                    <p>Illustration & Icons</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="bg-backgrounds-cardPrimary rounded-3xl p-4 w-1/2">
-              <div class="bg-white bg-opacity-45 rounded-full p-3">
-                <h3 class="font-medium tracking-wide text-fonts-primary text-xl">🎨 Design Skills</h3>
+
+              <!-- Card 2 -->
+              <div class="flex-1 bg-backgrounds-cardPrimary rounded-3xl p-4 sm:p-5 md:p-6 flex flex-col h-full">
+                <div class="inline-block bg-white/70 rounded-full px-4 py-2 mb-4 w-auto md:w-full self-start">
+                  <h3 class="font-medium text-gray-800 text-base sm:text-lg md:text-lg">🧩 Front-End Development</h3>
+                </div>
+
+                <div class="mt-2 text-gray-700 text-sm sm:text-base md:text-base space-y-2 flex-1">
+                  <div class="flex items-start gap-3 px-4 sm:px-5">
+                    <span class="mt-2 w-2 h-2 bg-gray-800 rounded-full"></span>
+                    <p>HTML, CSS, Tailwind</p>
+                  </div>
+                  <div class="flex items-start gap-3 px-4 sm:px-5">
+                    <span class="mt-2 w-2 h-2 bg-gray-800 rounded-full"></span>
+                    <p>JavaScript, Alpine.js</p>
+                  </div>
+                  <div class="flex items-start gap-3 px-4 sm:px-5">
+                    <span class="mt-2 w-2 h-2 bg-gray-800 rounded-full"></span>
+                    <p>Next.js, Bootstrap</p>
+                  </div>
+                  <div class="flex items-start gap-3 px-4 sm:px-5">
+                    <span class="mt-2 w-2 h-2 bg-gray-800 rounded-full"></span>
+                    <p>Responsive UI</p>
+                  </div>
+                </div>
               </div>
-              <div class="text-fonts-primary text-base font-normal py-2 pl-6">
-                <div class="flex flex-row items-center gap-4 py-1">
-                  <span class="bg-fonts-primary w-1 h-1 rounded-full"></span>
-                  <h3>UI Design/UX Design</h3>
+
+              <!-- Card 3 -->
+              <div class="flex-1 bg-backgrounds-cardPrimary rounded-3xl p-4 sm:p-5 md:p-6 flex flex-col h-full">
+                <div class="inline-block bg-white/70 rounded-full px-4 py-2 mb-4 w-auto md:w-full self-start">
+                  <h3 class="font-medium text-gray-800 text-base sm:text-lg md:text-lg">🛠️ Tools I Use</h3>
                 </div>
-                <div class="flex flex-row items-center gap-4 py-1">
-                  <span class="bg-fonts-primary w-1 h-1 rounded-full"></span>
-                  <h3>Landing Page Design</h3>
-                </div>
-                <div class="flex flex-row items-center gap-4 py-1">
-                  <span class="bg-fonts-primary w-1 h-1 rounded-full"></span>
-                  <h3>Visual Refinement</h3>
-                </div>
-                <div class="flex flex-row items-center gap-4 py-1">
-                  <span class="bg-fonts-primary w-1 h-1 rounded-full"></span>
-                  <h3>Illustration & Icons</h3>
+
+                <div class="mt-2 text-gray-700 text-sm sm:text-base md:text-base space-y-2 flex-1">
+                  <div class="flex items-start gap-3 px-4 sm:px-5">
+                    <span class="mt-2 w-2 h-2 bg-gray-800 rounded-full"></span>
+                    <p>Figma</p>
+                  </div>
+                  <div class="flex items-start gap-3 px-4 sm:px-5">
+                    <span class="mt-2 w-2 h-2 bg-gray-800 rounded-full"></span>
+                    <p>Illustrator & Photoshop</p>
+                  </div>
+                  <div class="flex items-start gap-3 px-4 sm:px-5">
+                    <span class="mt-2 w-2 h-2 bg-gray-800 rounded-full"></span>
+                    <p>GitHub</p>
+                  </div>
+                  <div class="flex items-start gap-3 px-4 sm:px-5">
+                    <span class="mt-2 w-2 h-2 bg-gray-800 rounded-full"></span>
+                    <p>Netlify</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -204,8 +267,14 @@
         </div>
       </div>
     </div>
+
     <!-- services -->
-    <div class="services"></div>
+    <div class="services">
+      <div class="bg-backgrounds-primary">
+        <div class="pointer-events-none absolute -left-32 top-96 bottom-0 h-52 w-52 rounded-full bg-green-400 opacity-50 blur-3xl -z-10"></div>
+        <h1>Let’s Build Something Awesome Together</h1>
+      </div>
+    </div>
     <!-- portfolio -->
     <div class="portfolio"></div>
     <!-- testimonials -->
@@ -214,5 +283,87 @@
     <div class="contact_me"></div>
     <!-- footer -->
     <div class="footer"></div>
+
+    <!-- javascript -->
+    <script>
+      (function () {
+        const toggleBtn = document.getElementById("nav-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const mobilePanel = document.getElementById("mobile-panel");
+        const hamburgerIcon = document.getElementById("hamburger-icon");
+        const closeIcon = document.getElementById("close-icon");
+
+        if (!toggleBtn || !mobileMenu || !mobilePanel) return;
+
+        let isOpen = false;
+        let outsideHandler = null;
+
+        function openMenu() {
+          isOpen = true;
+          toggleBtn.setAttribute("aria-expanded", "true");
+          hamburgerIcon.classList.add("hidden");
+          closeIcon.classList.remove("hidden");
+
+          // animate panel open (scaleY)
+          mobilePanel.style.transition = "transform 200ms ease, opacity 200ms ease";
+          mobilePanel.style.transform = "scaleY(1)";
+          mobilePanel.style.opacity = "1";
+
+          // add outside click handler on next tick so the original click doesn't close it
+          setTimeout(() => {
+            outsideHandler = function (e) {
+              // if click outside panel and not on toggle button -> close
+              if (!mobilePanel.contains(e.target) && !toggleBtn.contains(e.target)) {
+                closeMenu();
+              }
+            };
+            document.addEventListener("click", outsideHandler);
+          }, 0);
+
+          // close on Esc
+          document.addEventListener("keydown", onKeydown);
+        }
+
+        function closeMenu() {
+          isOpen = false;
+          toggleBtn.setAttribute("aria-expanded", "false");
+          hamburgerIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+
+          mobilePanel.style.transform = "scaleY(0)";
+          mobilePanel.style.opacity = "0";
+
+          if (outsideHandler) {
+            document.removeEventListener("click", outsideHandler);
+            outsideHandler = null;
+          }
+          document.removeEventListener("keydown", onKeydown);
+        }
+
+        function onKeydown(e) {
+          if (e.key === "Escape") closeMenu();
+        }
+
+        toggleBtn.addEventListener("click", function (e) {
+          // prevent the click from bubbling to document immediately
+          e.stopPropagation();
+
+          if (isOpen) closeMenu();
+          else openMenu();
+        });
+
+        // close when clicking a link inside mobile panel (optional & common)
+        mobilePanel.querySelectorAll(".mobile-link").forEach((link) => {
+          link.addEventListener("click", () => {
+            closeMenu();
+          });
+        });
+
+        // ensure initial hidden state
+        mobilePanel.style.transform = "scaleY(0)";
+        mobilePanel.style.opacity = "0";
+        mobilePanel.style.transformOrigin = "top center";
+      })();
+    </script>
   </body>
 </html>
