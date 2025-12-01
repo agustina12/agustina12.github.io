@@ -111,6 +111,141 @@
 }
 
 /* about */
-.about_me {
+.about_me .services {
   font-family: var(--font-default);
+}
+
+/* service */
+.services {
+  position: relative;
+  overflow: hidden;
+}
+
+bg-backgrounds-primary .bgServices {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: var(--bg-primary);
+}
+
+.blurGreen {
+  position: absolute;
+  left: 5rem;
+  bottom: 56rem;
+  width: 11rem;
+  height: 11rem;
+  background-color: var(--blur-green);
+  border-radius: 9999px;
+  opacity: 0.5;
+  filter: blur(48px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.blurPink {
+  position: absolute;
+  left: 90rem;
+  bottom: 32rem;
+  width: 11rem;
+  height: 11rem;
+  background-color: var(--blur-pink);
+  border-radius: 9999px;
+  opacity: 0.5;
+  filter: blur(48px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.services > .content-services {
+  position: relative;
+  z-index: 2;
+}
+
+/* responsive */
+@media (min-width: 320px) and (min-width: 480px) {
+  .layout-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .blurGreen {
+    position: absolute;
+    left: 2rem;
+    bottom: 65rem;
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--blur-green);
+    border-radius: 9999px;
+    opacity: 0.5;
+    filter: blur(48px);
+    z-index: 1;
+    pointer-events: none;
+  }
+  .blurPink {
+    position: absolute;
+    left: 30rem;
+    bottom: 51rem;
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--blur-pink);
+    border-radius: 9999px;
+    opacity: 0.5;
+    filter: blur(48px);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .portfolio {
+    margin: 0 20px 0 20px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 2736px) {
+  .services {
+    position: relative;
+    overflow: hidden;
+  }
+
+  bg-backgrounds-primary .bgServices {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-color: var(--bg-primary);
+  }
+
+  .blurGreen {
+    position: absolute;
+    left: 23rem;
+    bottom: 36rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--blur-green);
+    border-radius: 9999px;
+    opacity: 0.5;
+    filter: blur(48px);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .blurPink {
+    position: absolute;
+    left: 90rem;
+    bottom: 32rem;
+    width: 11rem;
+    height: 11rem;
+    background-color: var(--blur-pink);
+    border-radius: 9999px;
+    opacity: 0.5;
+    filter: blur(48px);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .services > .content-services {
+    position: relative;
+    z-index: 2;
+  }
+
+  .portfolio {
+    margin: 0 160px 0 160px;
+  }
 }

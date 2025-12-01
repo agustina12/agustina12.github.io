@@ -7,7 +7,7 @@
     <link href="./src/css/input.css" rel="stylesheet" />
     <link href="./src/css/output.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="max-2xl:w-full">
     <div class="nav-bg h-auto w-full">
       <!-- <div class="mx-40">
         <nav class="navbar w-full rounded-full border flex flex-row justify-between items-center py-4 px-8 mt-6 bg-white">
@@ -39,7 +39,7 @@
       <div class="px-4 pt-3 sm:pt-6 md:px-12 lg:px-20 xl:px-40">
         <nav class="navbar w-full rounded-full border flex items-center justify-between py-4 px-4 bg-white sm:mt-3">
           <a href="#" class="flex items-center gap-3">
-            <img src="/src/assets/img/logo.png" alt="Agustina logo" class="h-5 sm:h-6 md:h-8 lg:h-8 object-contain" />
+            <img src="/src/assets/img/logo.png" alt="Agustina logo" class="h-5 sm:h-5 md:h-6 lg:h-6 object-contain" />
           </a>
           <ul class="hidden lg:flex items-center gap-8 text-sm font-normal text-fonts-primary">
             <li><a href="#" class="group-hover:font-semibold group-hover:underline transition">Home</a></li>
@@ -68,7 +68,6 @@
           </div>
         </nav>
       </div>
-
       <!-- MOBILE MENU (centered panel) -->
       <div id="mobile-menu" class="lg:hidden">
         <div class="px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40">
@@ -84,13 +83,12 @@
             </ul>
 
             <div class="mt-4 flex gap-3">
-              <a href="#" class="flex-1 text-center px-4 py-2 rounded-full border">Download</a>
+              <a href="#" class="flex-1 text-center px-4 py-2 rounded-full border">Download CV</a>
               <a href="#" class="flex-1 text-center px-4 py-2 rounded-full bg-buttons-primary text-white">Hire me</a>
             </div>
           </div>
         </div>
       </div>
-
       <!-- hero -->
       <div class="hero relative overflow-hidden">
         <div class="pointer-events-none absolute -left-32 bottom-0 h-52 w-52 rounded-full bg-green-400 opacity-50 blur-3xl -z-10"></div>
@@ -156,21 +154,18 @@
         <div class="flex flex-col items-center">
           <!-- heading responsive -->
           <h1 class="mt-6 mb-4 text-2xl sm:text-3xl md:text-4xl font-medium text-fonts-primary tracking-wide text-center">🙌 Nice to meet you!</h1>
-
           <!-- rose boxes: full width on small, 9/12 on md+ (aku jaga w-9/12 sesuai permintaan) -->
           <div class="bg-rose-100 w-full md:w-9/12 lg:w-9/12 p-4 sm:p-5 md:p-6 rounded-2xl my-3">
             <p class="font-normal text-base sm:text-lg md:text-xl text-fonts-primary tracking-wide leading-6 sm:leading-7 md:leading-8">
               I’m a Web Designer & Front-End Developer focused on building clean, modern, fast, and user-friendly websites. I enjoy turning design ideas into real digital products through thoughtful design and solid front-end development.
             </p>
           </div>
-
           <div class="bg-rose-100 w-full md:w-9/12 lg:w-9/12 p-4 sm:p-5 md:p-6 rounded-2xl my-3">
             <p class="font-normal text-base sm:text-lg md:text-xl text-fonts-primary tracking-wide leading-6 sm:leading-7 md:leading-8">
               I’ve collaborated with international clients on Upwork, transforming Figma designs into responsive HTML/Tailwind code and building lightweight interactive components using JavaScript and Alpine.js.
             </p>
           </div>
-
-          <div class="bg-rose-100 w-full md:w-9/12 lg:w-9/12 p-4 sm:p-5 md:p-6 rounded-2xl my-3">
+          <div class="bg-rose-100 w-full md:w-9/12 lg:w-9/12 p-4 sm:p-5 md:p-6 sm:m-3 md:m-3 rounded-2xl my-3">
             <p class="font-normal text-base sm:text-lg md:text-xl text-fonts-primary tracking-wide leading-6 sm:leading-7 md:leading-8">
               Alongside freelance work, I also collaborate with development teams in a production environment — contributing to feature testing, UI validation, and release documentation. This experience helps me understand how design and
               code work together in real systems.
@@ -182,15 +177,13 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-8 md:pt-10 pb-12 md:pb-16">
           <div class="flex flex-col items-center">
             <h1 class="mt-6 mb-6 text-2xl sm:text-3xl md:text-4xl font-medium text-gray-800 tracking-wide text-center">Skills & tools</h1>
-
             <!-- KEEP your flex structure; responsive tweaks only -->
             <div class="flex flex-col md:flex-row md:justify-between gap-4 sm:gap-5 md:gap-6 w-full items-stretch">
               <!-- Card 1 -->
-              <div class="flex-1 bg-backgrounds-cardPrimary rounded-3xl p-4 sm:p-5 md:p-6 flex flex-col h-full">
-                <div class="inline-block bg-white/70 rounded-full px-4 py-2 mb-4 w-auto md:w-full self-start">
+              <div class="flex-1 bg-backgrounds-cardPrimary rounded-3xl p-4 sm:p-5 md:p-6 flex flex-col">
+                <div class="inline-block bg-white/70 rounded-full px-4 py-2 mb-4 w-auto md:w-full sm:w-full self-start">
                   <h3 class="font-medium text-gray-800 text-base sm:text-lg md:text-lg">🎨 Design Skills</h3>
                 </div>
-
                 <div class="mt-2 text-gray-700 text-sm sm:text-base md:text-base space-y-2 flex-1">
                   <div class="flex items-start gap-3 px-4 sm:px-5">
                     <span class="mt-2 w-2 h-2 bg-gray-800 rounded-full"></span>
@@ -212,8 +205,8 @@
               </div>
 
               <!-- Card 2 -->
-              <div class="flex-1 bg-backgrounds-cardPrimary rounded-3xl p-4 sm:p-5 md:p-6 flex flex-col h-full">
-                <div class="inline-block bg-white/70 rounded-full px-4 py-2 mb-4 w-auto md:w-full self-start">
+              <div class="flex-1 bg-backgrounds-cardPrimary rounded-3xl p-4 sm:p-5 md:p-6 flex flex-col">
+                <div class="inline-block bg-white/70 rounded-full px-4 py-2 mb-4 w-auto md:w-full sm:w-full self-start">
                   <h3 class="font-medium text-gray-800 text-base sm:text-lg md:text-lg">🧩 Front-End Development</h3>
                 </div>
 
@@ -238,8 +231,8 @@
               </div>
 
               <!-- Card 3 -->
-              <div class="flex-1 bg-backgrounds-cardPrimary rounded-3xl p-4 sm:p-5 md:p-6 flex flex-col h-full">
-                <div class="inline-block bg-white/70 rounded-full px-4 py-2 mb-4 w-auto md:w-full self-start">
+              <div class="flex-1 bg-backgrounds-cardPrimary rounded-3xl p-4 sm:p-5 md:p-6 flex flex-col">
+                <div class="inline-block bg-white/70 rounded-full px-4 py-2 mb-4 w-auto md:w-full sm:w-full self-start">
                   <h3 class="font-medium text-gray-800 text-base sm:text-lg md:text-lg">🛠️ Tools I Use</h3>
                 </div>
 
@@ -270,13 +263,118 @@
 
     <!-- services -->
     <div class="services">
-      <div class="bg-backgrounds-primary">
-        <div class="pointer-events-none absolute -left-32 top-96 bottom-0 h-52 w-52 rounded-full bg-green-400 opacity-50 blur-3xl -z-10"></div>
-        <h1>Let’s Build Something Awesome Together</h1>
+      <div class="blurGreen"></div>
+      <div class="blurPink"></div>
+      <div class="bgServices bg-backgrounds-primary">
+        <div class="2xl:mx-40 2xl:my-16 sm:mx-8 md:mx-16 content-services">
+          <div class="mx-auto px-4 sm:px-6 pt-8 md:pt-10 pb-12 md:pb-16">
+            <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center py-12">
+                <h1 class="font-sans text-4xl tracking-wide font-medium text-fonts-primary text-center">Let’s Build Something Awesome Together</h1>
+                <p class="font-sans text-lg font-light text-fonts-primary tracking-wide leading-8 py-5 2xl:w-4/6 sm:w-full sm:px-2 text-center">
+                  I design and build clean, functional, and visually engaging web experiences that bring your ideas to life based on real client projects and requests I’ve completed through Upwork.
+                </p>
+                <!-- <button
+                  type="button"
+                  class="border border-fonts-primary text-fonts-primary font-sans text-base font-medium px-6 py-3 rounded-full hover:border-fonts-secondary hover:text-fonts-secondary transition delay-150 duration-300 ease-in-out"
+                >
+                  <a href="#" class="">Work With Me</a>
+                </button> -->
+                <button
+                  type="button"
+                  class="relative overflow-hidden border border-fonts-primary text-fonts-primary px-6 py-3 rounded-full font-medium transition-all duration-300 ease-out hover:text-fonts-primary hover:bg-backgrounds-accent hover:border-transparent hover:shadow-lg"
+                >
+                  <span class="relative z-10">Work With Me</span>
+
+                  <span class="absolute inset-0 bg-gradient-to-r from-fonts-primary to-fonts-secondary translate-x-[-100%] transition-transform duration-300 ease-out hover:translate-x-0"></span>
+                </button>
+              </div>
+              <div class="flex flex-col md:flex-row md:justify-between gap-4 sm:gap-5 md:gap-6 w-full items-stretch">
+                <div class="flex-1 bg-backgrounds-secondary rounded-3xl p-4 sm:p-5 md:p-6 flex flex-col w-full">
+                  <div class="rounded-full bg-white bg-opacity-80 w-16 h-16 flex flex-row items-center justify-center">
+                    <h1 class="text-3xl p-2">️🖥️</h1>
+                  </div>
+                  <h1 class="font-sans text-xl font-semibold tracking-wide text-white pt-2 pb-1">Design to Live Website</h1>
+                  <h2 class="font-sans text-sm font-medium tracking-wide text-white italic pb-2">From concept to clean, conversion-ready code</h2>
+                  <hr />
+                  <p class="font-sans text-sm font-light tracking-wide text-white leading-6 pt-3">
+                    Transform your Figma, Photoshop, or XD designs into responsive, pixel-perfect, and high-converting websites using HTML, CSS, and JavaScript, powered by Tailwind, Bootstrap, or Next.js for modern, scalable development.
+                  </p>
+                </div>
+                <div class="flex-1 bg-backgrounds-secondary rounded-3xl p-4 sm:p-5 md:p-6 flex flex-col w-full">
+                  <div class="rounded-full bg-white bg-opacity-80 w-16 h-16 flex flex-row items-center justify-center">
+                    <h1 class="text-3xl p-2">⚡</h1>
+                  </div>
+                  <h1 class="font-sans text-xl font-medium tracking-wide text-white pt-2 pb-1">Fast & Interactive Front-End</h1>
+                  <h2 class="font-sans text-sm font-medium tracking-wide text-white italic pb-2">Smooth, lightweight, and built for performance</h2>
+                  <hr />
+                  <p class="font-sans text-sm font-light tracking-wide text-white leading-6 pt-3">
+                    Build dynamic user interfaces with Tailwind CSS and Alpine.js, featuring subtle animations, instant load times, and efficient interactivity — without heavy frameworks slowing things down.
+                  </p>
+                </div>
+                <div class="flex-1 bg-backgrounds-secondary rounded-3xl p-4 sm:p-5 md:p-6 flex flex-col w-full">
+                  <div class="rounded-full bg-white bg-opacity-80 w-16 h-16 flex flex-row items-center justify-center">
+                    <h1 class="text-3xl p-2">🎨</h1>
+                  </div>
+                  <h1 class="font-sans text-xl font-medium tracking-wide text-white pt-2 pb-1">UI & Visual Refinement</h1>
+                  <h2 class="font-sans text-sm font-medium tracking-wide text-white italic pb-2">Make your website look polished and consistent</h2>
+                  <hr />
+                  <p class="font-sans text-sm font-light tracking-wide text-white leading-6 pt-3">
+                    Enhance your website’s visual appeal with refined layouts, colors, and typography — creating a cohesive, professional design that engages your audience.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- portfolio -->
-    <div class="portfolio"></div>
+    <div class="portfolio">
+      <div class="mx-auto px-4 sm:px-6 pt-6 md:pt-8 pb-12 md:pb-16">
+        <div class="flex flex-col py-8">
+          <h1 class="font-sans text-5xl tracking-wide font-medium text-fonts-primary text-center">Selected Work</h1>
+          <div class="coding-space">
+            <h1 class="font-sans text-4xl tracking-wide font-medium text-fonts-primary text-left py-2">Coding Work</h1>
+            <hr />
+            <p class="font-sans text-xl tracking-wide font-light text-fonts-primary text-left py-2">A collection of client projects and personal works showcasing my approach to clean, responsive, and functional web design.</p>
+            <button
+              type="button"
+              class="border border-fonts-primary text-fonts-primary font-sans text-base font-medium px-5 py-2 rounded-full hover:border-fonts-secondary hover:text-fonts-secondary transition delay-150 duration-300 ease-in-out flex gap-2"
+            >
+              <a href="#" class="">Github Profile</a>
+              <img src="./src/assets/icons/github.svg" class="w-6 h-6" />
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-row gap-4">
+          <div class="border border-zinc-400 rounded-3xl p-4 sm:p-5 md:p-6 flex flex-col w-full">
+            <img src="./src/assets/img/codePortfolioOne.png" class="" />
+            <h1>Pet Care - Contest Landing Page on Design Crowd</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Sed a id mauris orci tincidunt arcu gravida cursus. Pulvinar luctus leo sapien ut tristique sem. Consequat feugiat pulvinar eu elit suspendisse sed morbi. Tortor sit at tempor
+              suspendisse vitae nibh pharetra.
+            </p>
+          </div>
+          <div class="border border-slate-300 rounded-3xl p-4 sm:p-5 md:p-6 flex flex-col w-full">
+            <img src="./src/assets/img/codePortfolioOne.png" class="" />
+            <h1>Pet Care - Contest Landing Page on Design Crowd</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Sed a id mauris orci tincidunt arcu gravida cursus. Pulvinar luctus leo sapien ut tristique sem. Consequat feugiat pulvinar eu elit suspendisse sed morbi. Tortor sit at tempor
+              suspendisse vitae nibh pharetra.
+            </p>
+          </div>
+          <div class="border border-slate-300 rounded-3xl p-4 sm:p-5 md:p-6 flex flex-col w-full">
+            <img src="./src/assets/img/codePortfolioOne.png" class="" />
+            <h1>Pet Care - Contest Landing Page on Design Crowd</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Sed a id mauris orci tincidunt arcu gravida cursus. Pulvinar luctus leo sapien ut tristique sem. Consequat feugiat pulvinar eu elit suspendisse sed morbi. Tortor sit at tempor
+              suspendisse vitae nibh pharetra.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- testimonials -->
     <div class="testimonials"></div>
     <!-- contact me -->
