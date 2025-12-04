@@ -12,10 +12,12 @@
     --fonts-primary: theme("colors.fonts.primary");
     --fonts-secondary: theme("colors.fonts.secondary");
     --fonts-tertiary: theme("colors.fonts.tertiary");
+    --fonts-btnfonts: theme("colors.fonts.btnFonts");
     --bg-primary: theme("colors.backgrounds.primary");
     --bg-secondary: theme("colors.backgrounds.secondary");
     --bg-accent: theme("colors.backgrounds.accent");
     --bg-tertiary: theme("colors.backgrounds.tertiary");
+    --bg-quinary: theme("colors.backgrounds.quinary");
     --bg-card: theme("colors.backgrounds.cardPrimary");
     --btn-dark: theme("colors.buttons.dark");
     --btn-primary: theme("colors.buttons.primary");
@@ -245,7 +247,7 @@ bg-backgrounds-primary .bgServices {
     z-index: 2;
   }
 
-  .portfolio {
-    margin: 0 160px 0 160px;
-  }
+  /* .portfolio {
+    margin: 0 10rem 0 10rem;
+  } */
 }

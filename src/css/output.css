@@ -565,10 +565,12 @@ video {
   --fonts-primary: #34402F;
   --fonts-secondary: #8FA685;
   --fonts-tertiary: #576C4E;
+  --fonts-btnfonts: #553F1D;
   --bg-primary: #FAFAFA;
   --bg-secondary: #8FA685;
   --bg-accent: #FFCC63;
   --bg-tertiary: FCE0DE;
+  --bg-quinary: #FDFDFD;
   --bg-card: #FFECCD;
   --btn-dark: #000000;
   --btn-primary: #2E8B57;
@@ -1343,6 +1345,11 @@ video {
   background-color: rgb(250 250 250 / var(--tw-bg-opacity, 1));
 }
 
+.bg-backgrounds-quinary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 253 253 / var(--tw-bg-opacity, 1));
+}
+
 .bg-backgrounds-secondary{
   --tw-bg-opacity: 1;
   background-color: rgb(143 166 133 / var(--tw-bg-opacity, 1));
@@ -1352,9 +1359,19 @@ video {
   background-color: FCE0DE;
 }
 
+.bg-buttons-accent{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 241 219 / var(--tw-bg-opacity, 1));
+}
+
 .bg-buttons-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(46 139 87 / var(--tw-bg-opacity, 1));
+}
+
+.bg-buttons-secondary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 210 137 / var(--tw-bg-opacity, 1));
 }
 
 .bg-fonts-primary{
@@ -1755,6 +1772,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1819,9 +1841,19 @@ video {
   letter-spacing: 0.05em;
 }
 
+.text-buttons-dark{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
 .text-buttons-primary{
   --tw-text-opacity: 1;
   color: rgb(46 139 87 / var(--tw-text-opacity, 1));
+}
+
+.text-fonts-btnFonts{
+  --tw-text-opacity: 1;
+  color: rgb(85 63 29 / var(--tw-text-opacity, 1));
 }
 
 .text-fonts-dark{
@@ -2192,9 +2224,9 @@ bg-backgrounds-primary .bgServices {
     z-index: 2;
   }
 
-  .portfolio {
-    margin: 0 160px 0 160px;
-  }
+  /* .portfolio {
+    margin: 0 10rem 0 10rem;
+  } */
 }
 
 .hover\:translate-x-0:hover{
@@ -2224,6 +2256,15 @@ bg-backgrounds-primary .bgServices {
 .hover\:bg-gray-100:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-fonts-secondary:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(143 166 133 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:font-medium:hover{
+  font-weight: 500;
 }
 
 .hover\:text-fonts-primary:hover{

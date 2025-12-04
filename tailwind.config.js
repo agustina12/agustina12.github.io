@@ -10,12 +10,14 @@ module.exports = {
           primary: "#34402F",
           secondary: "#8FA685",
           tertiary: "#576C4E",
+          btnFonts: "#553F1D",
         },
         backgrounds: {
           primary: "#FAFAFA",
           secondary: "#8FA685",
           tertiary: "FCE0DE",
           accent: "#FFCC63",
+          quinary: "#FDFDFD",
           cardPrimary: "#FFECCD",
         },
         buttons: {
