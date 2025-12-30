@@ -2258,11 +2258,6 @@ bg-backgrounds-primary .bgServices {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:bg-fonts-secondary:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(143 166 133 / var(--tw-bg-opacity, 1));
-}
-
 .hover\:font-medium:hover{
   font-weight: 500;
 }
@@ -2460,10 +2455,6 @@ bg-backgrounds-primary .bgServices {
 
   .md\:pt-10{
     padding-top: 2.5rem;
-  }
-
-  .md\:pt-8{
-    padding-top: 2rem;
   }
 
   .md\:text-4xl{
