@@ -9,55 +9,27 @@
   </head>
   <body class="max-2xl:w-full">
     <div class="nav-bg h-auto w-full">
-      <!-- <div class="mx-40">
-        <nav class="navbar w-full rounded-full border flex flex-row justify-between items-center py-4 px-8 mt-6 bg-white">
-          <img class="logo" src="/src/assets/img/logo.png" alt="logo" />
-          <ul class="header flex justify-items-end gap-10">
-            <li class="group tracking-wide font-normal">
-              <a href="#" class="group-hover:font-bold group-hover:underline transition-all duration-200">Home</a>
-            </li>
-            <li class="group tracking-wide font-normal">
-              <a href="#" class="group-hover:font-semibold group-hover:underline transition-all duration-200">About Me</a>
-            </li>
-            <li class="group tracking-wide font-normal">
-              <a href="#" class="group-hover:font-semibold group-hover:underline transition-all duration-200">My Services</a>
-            </li>
-            <li class="group tracking-wide font-normal">
-              <a href="#" class="group-hover:font-semibold group-hover:underline transition-all duration-200">Portfolio</a>
-            </li>
-            <li class="group tracking-wide font-normal">
-              <a href="#" class="group-hover:font-semibold group-hover:underline transition-all duration-200">Testimonials</a>
-            </li>
-            <li class="group tracking-wide font-normal">
-              <a href="#" class="group-hover:font-semibold group-hover:underline transition-all duration-200">Contact Me</a>
-            </li>
-          </ul>
-        </nav>
-      </div> -->
-      <!-- nav -->
       <!-- NAVBAR (paste di tempat navbar kamu) -->
-      <div class="px-4 pt-3 sm:pt-6 md:px-12 lg:px-20 xl:px-40">
+      <div class="px-4 pt-3 sm:pt-6 md:px-12 lg:px-20 xl:px-48 relative">
         <nav class="navbar w-full rounded-full border flex items-center justify-between py-4 px-4 bg-white sm:mt-3">
           <a href="#" class="flex items-center gap-3">
             <img src="/src/assets/img/logo.png" alt="Agustina logo" class="h-5 sm:h-5 md:h-6 lg:h-6 object-contain" />
           </a>
-          <ul class="hidden lg:flex items-center gap-8 text-sm font-normal text-fonts-primary">
-            <li><a href="#" class="group-hover:font-semibold group-hover:underline transition">Home</a></li>
-            <li><a href="#" class="group-hover:font-semibold group-hover:underline transition">About Me</a></li>
-            <li><a href="#" class="group-hover:font-semibold group-hover:underline transition">My Services</a></li>
-            <li><a href="#" class="group-hover:font-semibold group-hover:underline transition">Portfolio</a></li>
-            <li><a href="#" class="group-hover:font-semibold group-hover:underline transition">Testimonials</a></li>
-            <li><a href="#" class="group-hover:font-semibold group-hover:underline transition">Contact Me</a></li>
+          <ul class="hidden lg:flex items-center gap-8 text-sm font-normal text-fonts-primary ">
+            <li><a href="#hero" class="hover:font-semibold hover:underline transition">Home</a></li>
+            <li><a href="#aboutme" class="hover:font-semibold hover:underline transition">About Me</a></li>
+            <li><a href="#myservices" class="hover:font-semibold hover:underline transition">My Services</a></li>
+            <li><a href="#portfolio" class="hover:font-semibold hover:underline transition">Portfolio</a></li>
+            <li><a href="#testimonials" class="hover:font-semibold hover:underline transition">Testimonials</a></li>
+            <li><a href="#contactme" class="hover:font-semibold hover:underline transition">Contact Me</a></li>
+            <div class="hidden lg:flex items-center gap-4">
+              <a href="#" class="bg-fonts-secondary text-white px-4 py-2 rounded-full text-sm hover:bg-fonts-tertiary hover:font-semibold">Resume</a>
+            </div>
           </ul>
-
-          <div class="hidden lg:flex items-center gap-4">
-            <a href="#" class="px-4 py-2 rounded-full border border-buttons-primary text-buttons-primary text-sm">Download</a>
-            <a href="#" class="bg-buttons-primary text-white px-4 py-2 rounded-full text-sm">Hire me</a>
-          </div>
 
           <!-- hamburger -->
           <div class="lg:hidden">
-            <button id="nav-toggle" aria-controls="mobile-menu" aria-expanded="false" class="p-2 rounded-md border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-buttons-primary" title="Open menu">
+            <button id="nav-toggle" aria-controls="mobile-menu" aria-expanded="false" class="p-2 rounded-md border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fonts-secondary" title="Open menu">
               <svg id="hamburger-icon" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
@@ -69,36 +41,34 @@
         </nav>
       </div>
       <!-- MOBILE MENU (centered panel) -->
-      <div id="mobile-menu" class="lg:hidden">
+      <div id="mobile-menu" class="absolute left-0 right-0 z-50 lg:hidden xl:hidden">
         <div class="px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40">
           <!-- panel centered with mx-auto and limited max-width -->
           <div id="mobile-panel" class="mx-auto max-w-md w-full bg-white border rounded-xl mt-3 p-4 shadow-md transform origin-top-center scale-y-0" style="transform-origin: top center">
             <ul class="flex flex-col gap-3 text-base text-fonts-primary">
-              <li><a href="#" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100">Home</a></li>
-              <li><a href="#" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100">About Me</a></li>
-              <li><a href="#" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100">My Services</a></li>
-              <li><a href="#" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100">Portfolio</a></li>
-              <li><a href="#" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100">Testimonials</a></li>
-              <li><a href="#" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100">Contact Me</a></li>
+              <li><a href="#hero" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100 hover:underline transition">Home</a></li>
+              <li><a href="#aboutme" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100 hover:underline transition">About Me</a></li>
+              <li><a href="#myservices" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100 hover:underline transition">My Services</a></li>
+              <li><a href="#portfolio" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100 hover:underline transition">Portfolio</a></li>
+              <li><a href="#testimonial" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100 hover:underline transition">Testimonials</a></li>
+              <li><a href="#contactme" class="mobile-link block px-3 py-2 rounded-md hover:bg-gray-100 hover:underline transition">Contact Me</a></li>
             </ul>
-
-            <div class="mt-4 flex gap-3">
-              <a href="#" class="flex-1 text-center px-4 py-2 rounded-full border">Download CV</a>
-              <a href="#" class="flex-1 text-center px-4 py-2 rounded-full bg-buttons-primary text-white">Hire me</a>
+            <div class="mt-4 flex w-full">
+              <a href="#" class="bg-fonts-secondary text-white px-4 py-2 rounded-full text-sm w-full text-center hover:bg-fonts-tertiary hover:font-semibold">Resume</a>
             </div>
           </div>
         </div>
       </div>
       <!-- hero -->
-      <div class="hero relative overflow-hidden">
+      <div class="hero relative overflow-hidden" id="#hero">
         <div class="pointer-events-none absolute -left-32 bottom-0 h-52 w-52 rounded-full bg-green-400 opacity-50 blur-3xl -z-10"></div>
         <div class="yellow-blur pointer-events-none absolute top-24 h-32 w-32 rounded-full bg-yellow-400 opacity-60 blur-3xl -z-10"></div>
         <div class="pink-blur pointer-events-none absolute bottom-10 h-52 w-52 rounded-full bg-rose-400 opacity-70 blur-3xl -z-10"></div>
-        <div class="flex flex-row justify-between items-center mx-40 my-16">
-          <div class="hero-text w-1/2">
-            <h1 class="text-6xl headline pb-6">Hello 👋 <br />I’m Agustina</h1>
-            <p class="sub-title">Web Designer & Frontend Developer based in Indonesia</p>
-            <p class="paragraph text-base font-light leading-8 tracking-tight max-2xl:w-full max-xl:w-1/5">
+        <div class="hero-group flex lg:flex-row justify-between items-center lg:mx-48 my-12 md:flex-col sm:flex-col sm:mx-24 sm:flex-none">
+          <div class="hero-text sm:w-full">
+            <h1 class="headline pb-6 lg:text-7xl md:text-4xl sm:text-3xl leading-10">Hello 👋 <br />I’m Agustina</h1>
+            <p class="sub-title">Web Designer & Frontend Developer </p>
+            <p class="paragraph text-base font-light leading-8 tracking-tight max-2xl:w-full  md:w-full sm:w-full">
               I build modern, clean, and user-friendly websites — transforming Figma designs into responsive front-end code using HTML, CSS, Tailwind, JavaScr ipt, and Alpine.js. Open for remote roles, freelance projects, and international
               collaboration.
             </p>
@@ -111,13 +81,15 @@
               </button>
             </div>
           </div>
-          <div class="hero-img w-1/2">
-            <div class="relative overflow-hidden">
-              <div class="card">
-                <div class="inner-box"></div>
-              </div>
-              <div class="absolute bottom-[-12px] left-80 transform -translate-x-1/2 z-20">
-                <img src="src/assets/img/pic-profile.png" class="rounded-2xl object-cover w-full" alt="Profile Picture" />
+          <div class="hero-img sm:w-full">
+            <div class="container">
+              <div class="card-wrapper">
+                <div class="bgCard">
+                  <img src="./src/assets/img/gray.png" alt="img">
+                </div>
+                <div class="picCard">
+                  <img src="./src/assets/img/JasminChew.png" alt="img">
+                </div>
               </div>
             </div>
           </div>
@@ -149,7 +121,7 @@
       </div>
     </div>
     <!-- about me -->
-    <div class="about_me">
+    <div class="about_me" id="aboutme">
       <div class="bg-backgrounds-primary mx-4 sm:mx-6 md:mx-12 lg:mx-20 xl:mx-40 my-8 md:my-16 rounded-2xl">
         <div class="flex flex-col items-center">
           <!-- heading responsive -->
@@ -262,7 +234,7 @@
     </div>
 
     <!-- services -->
-    <div class="services">
+    <div class="services" id="myservices">
       <div class="blurGreen"></div>
       <div class="blurPink"></div>
       <div class="bgServices bg-backgrounds-primary">
@@ -330,7 +302,7 @@
       </div>
     </div>
     <!-- portfolio -->
-    <div class="portfolio font-sans">
+    <div class="portfolio font-sans" id="portfolio">
       <!-- github -->
       <div class="mx-4 sm:mx-6 md:mx-12 lg:mx-20 xl:mx-40 my-8 md:my-16">
         <div class="flex flex-col py-8">
@@ -476,14 +448,21 @@
        
     </div>
     <!-- testimonials -->
-    <div class="testimonials"></div>
+    <div class="testimonials" id="testimonials"></div>
     <!-- contact me -->
-    <div class="contact_me"></div>
+    <div class="contact_me" id="contactme"></div>
     <!-- footer -->
     <div class="footer"></div>
 
     <!-- javascript -->
     <script>
+      const menuBtn = document.getElementById('mobile-menu'); // ganti dengan id tombolmu
+      const panel = document.getElementById('mobile-panel');
+        menuBtn.addEventListener('click', () => {
+        panel.classList.toggle('scale-y-0');
+        panel.classList.toggle('scale-y-100');
+      });
+
       (function () {
         const toggleBtn = document.getElementById("nav-toggle");
         const mobileMenu = document.getElementById("mobile-menu");
