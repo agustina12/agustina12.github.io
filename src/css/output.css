@@ -573,7 +573,7 @@ video {
   --bg-quinary: #FDFDFD;
   --bg-card: #FFECCD;
   --btn-dark: #000000;
-  --btn-primary: #2E8B57;
+  --btn-primary: #8FA685;
   --btn-secondary: #FFD289;
   --btn-accent: #FEF1DB;
   --blur-green: #DDF6D2;
@@ -815,9 +815,19 @@ video {
   margin-right: 2rem;
 }
 
+.mx-9{
+  margin-left: 2.25rem;
+  margin-right: 2.25rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .my-10{
@@ -850,9 +860,19 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-9{
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
 }
 
 .mb-1{
@@ -901,6 +921,10 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mt-9{
+  margin-top: 2.25rem;
 }
 
 .block{
@@ -1025,10 +1049,6 @@ video {
 
 .w-1{
   width: 0.25rem;
-}
-
-.w-1\/2{
-  width: 50%;
 }
 
 .w-12{
@@ -1344,7 +1364,7 @@ video {
 
 .border-buttons-primary{
   --tw-border-opacity: 1;
-  border-color: rgb(46 139 87 / var(--tw-border-opacity, 1));
+  border-color: rgb(143 166 133 / var(--tw-border-opacity, 1));
 }
 
 .border-fonts-primary{
@@ -1403,7 +1423,7 @@ video {
 
 .bg-buttons-primary{
   --tw-bg-opacity: 1;
-  background-color: rgb(46 139 87 / var(--tw-bg-opacity, 1));
+  background-color: rgb(143 166 133 / var(--tw-bg-opacity, 1));
 }
 
 .bg-buttons-secondary{
@@ -1809,6 +1829,11 @@ video {
   line-height: 1;
 }
 
+.text-8xl{
+  font-size: 6rem;
+  line-height: 1;
+}
+
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1909,7 +1934,7 @@ video {
 
 .text-buttons-primary{
   --tw-text-opacity: 1;
-  color: rgb(46 139 87 / var(--tw-text-opacity, 1));
+  color: rgb(143 166 133 / var(--tw-text-opacity, 1));
 }
 
 .text-fonts-btnFonts{
@@ -2528,11 +2553,6 @@ bg-backgrounds-primary .bgServices {
     margin: 0.75rem;
   }
 
-  .sm\:mx-24{
-    margin-left: 6rem;
-    margin-right: 6rem;
-  }
-
   .sm\:mx-6{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -2543,8 +2563,17 @@ bg-backgrounds-primary .bgServices {
     margin-right: 2rem;
   }
 
+  .sm\:my-1{
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+
   .sm\:mt-3{
     margin-top: 0.75rem;
+  }
+
+  .sm\:mt-9{
+    margin-top: 2.25rem;
   }
 
   .sm\:h-5{
@@ -2642,10 +2671,6 @@ bg-backgrounds-primary .bgServices {
     width: 100%;
   }
 
-  .md\:flex-none{
-    flex: none;
-  }
-
   .md\:flex-row{
     flex-direction: row;
   }
@@ -2684,6 +2709,11 @@ bg-backgrounds-primary .bgServices {
     line-height: 2.5rem;
   }
 
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .md\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
@@ -2710,11 +2740,6 @@ bg-backgrounds-primary .bgServices {
     margin-right: 5rem;
   }
 
-  .lg\:mx-48{
-    margin-left: 12rem;
-    margin-right: 12rem;
-  }
-
   .lg\:flex{
     display: flex;
   }
@@ -2725,10 +2750,6 @@ bg-backgrounds-primary .bgServices {
 
   .lg\:h-6{
     height: 1.5rem;
-  }
-
-  .lg\:w-1\/2{
-    width: 50%;
   }
 
   .lg\:w-9\/12{
@@ -2756,8 +2777,17 @@ bg-backgrounds-primary .bgServices {
     margin-right: 10rem;
   }
 
+  .xl\:my-16{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
   .xl\:hidden{
     display: none;
+  }
+
+  .xl\:w-1\/2{
+    width: 50%;
   }
 
   .xl\:px-40{

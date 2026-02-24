@@ -22,7 +22,7 @@ module.exports = {
         },
         buttons: {
           dark: "#000000",
-          primary: "#2E8B57",
+          primary: "#8FA685",
           secondary: "#FFD289",
           accent: "#FEF1DB",
         },
