@@ -29,6 +29,7 @@
     --font-default: theme("fontFamily.sans");
     --font-title: theme("fontFamily.theme");
     --card-primary: theme("colors.card.primary");
+    --stroke-primary: theme("colors.stroke.primary");
   }
   /* .bg-hero {
     background-image: url("../assets/img/bg_hero.png");

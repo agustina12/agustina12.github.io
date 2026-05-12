@@ -34,6 +34,10 @@ module.exports = {
         card: {
           primary: "#FFECCD",
         },
+        stroke: {
+          primary: "5E7156",
+          secondary: "E3E3E3",
+        },
       },
       fontFamily: {
         sans: ["Roboto", ...defaultTheme.fontFamily.sans],
